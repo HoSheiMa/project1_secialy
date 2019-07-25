@@ -1,0 +1,21 @@
+ {
+     "vars" : {
+     },
+     "html" : "name :  <vars>Page_name</vars>",
+     "attr" : {
+        "style" : {
+            "background-color": "yellow",
+            "color": "#000",
+            "display": "inline-block",
+            "padding": "8px",
+            "margin": "5px"
+
+        }
+    },
+    "children" : {
+        "child1" : {
+            "text" : ""
+        }
+    }
+    
+ }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body {
+		background: #eee;
+	}
+		.input {
+			width: 200px;
+			height: 35px;
+			background: #fff;
+			cursor: text;
+			border-radius: 4px;
+			position: relative;
+			}
+		.input .input_effect {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			border-radius: 4px;
+			background-color: transparent;
+			opacity: 1;
+			overflow: hidden;
+			z-index: 1;
+		}
+		.input input {
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+			border:none;
+			background: #fff;
+			position: relative;
+			font-size: 22px;
+			box-sizing: border-box;
+			top: -35px;
+			padding: 4px;
+			outline: none;
+		}
+        .scale_awosome_btn {
+            width: 10px;
+            height: 10px;
+            background: rgba(113,82,150, .7);
+            border-radius: 50%;
+            opacity: 1;
+            position : absolute;
+            animation: scale_awosome_btn .6s 1;
+        }
+                @keyframes scale_awosome_btn {
+            to {
+                transform: scale(40) rotate(360deg);
+
+ 
+            }
+
+            
+        }
+	</style>
+</head>
+<body>
+
+
+<div class=input >
+	<div class=input_effect onclick="lib_awesome(event, this)">
+		 
+	</div>
+	<input type="" name="">
+</div>
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript">
+    function lib_awesome(event, el) {
+    	console.log('1')
+        cx = event.clientX;
+        cy = event.clientY;
+        el_show = document.createElement('div');
+        el_show.innerHTML = '';
+        el_show.className = 'scale_awosome_btn';
+        el_show.style = 
+        "left : " + (cx - 10) + "px;"+
+        "top : " + (cy - 10) + "px;";
+        self = el;
+        self.appendChild(el_show);
+        setTimeout(function () {
+            for (var i in self.children) {
+            	if (i == "length") break;
+                self.children[i].remove();
+                input_select(event, self)
+            }
+        }, 600);
+    }
+    function input_select(e, el) {
+    	console.log('2')
+    	el.style.zIndex = '0'
+    	$(el).next().css('z-index', '1').focus().on('focusout', function () {
+    		el.style.zIndex = '1'
+    		$(this).css('z-index', '0')
+    	});
+
+    }
+</script>
+</body>
+</html>

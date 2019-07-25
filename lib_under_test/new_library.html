@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div import="2020">
+</div>
+
+
+<DIV export=2020 do='export_to(2020)'>
+	HoSheiMa
+</DIV>
+
+<script>
+
+function export_to (id) {
+	el = document.querySelector('[export="'+id+'"]');
+	export_TO = document.querySelectorAll('[import="'+id+'"]');
+	for (var i in export_TO) {
+		if (parseInt(i) == NaN) break;
+	if (export_TO[i].tagName != "INPUT" ) {
+
+			export_TO[i].innerHTML = el.value;
+	} 
+	else {
+		export_TO[i].value = el.value;
+	}
+	}
+
+
+}
+
+(function do_function() {
+	html =  document.querySelectorAll('[do]');
+	for (var i in html) {
+		if (parseInt(i) == NaN) break;
+		fun = (html[i]).getAttribute('do')
+		setTimeout(fun, 600);
+	}
+})();
+
+
+</script>
+</body>
+</html>

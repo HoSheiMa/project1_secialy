@@ -1,0 +1,86 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+    body {
+        background: #111;
+    }
+        .lib_awesome {
+            padding: 8px;
+            font-size: 28px;
+            border:none;
+            background: #0ccffd;
+            border-radius: 4px;
+            outline: none;
+            color: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 3px #eee;
+            overflow: hidden;
+            position: relative;
+        }
+        .scale_awosome_btn {
+            width: 10px;
+            height: 10px;
+            background: rgba(255,255,255, .7);
+            border-radius: 50%;
+            opacity: 1;
+            position : absolute;
+            animation: scale_awosome_btn .6s 1;
+        }
+        .scale_awosome_btn_rect {
+            width: 10px;
+            height: 10px;
+            background: rgba(255,255,255, .7);
+            border-radius: 0%;
+            opacity: 1;
+            position : absolute;
+            animation: scale_awosome_btn 1s 1;
+        }
+        @keyframes scale_awosome_btn {
+            to {
+                transform: scale(40) rotate(360deg);
+
+ 
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+
+
+
+<button class=lib_awesome :this%this.herf^^goto(index.js):activr_library onclick="lib_awesome(event, this)">Hello World!</button>
+
+
+
+
+
+<script type="text/javascript">
+    function lib_awesome(event, el) {
+        cx = event.clientX;
+        cy = event.clientY;
+        el_show = document.createElement('div');
+        el_show.innerHTML = '';
+        el_show.className = 'scale_awosome_btn';
+        el_show.style = 
+        "left : " + (cx - 10) + "px;"+
+        "top : " + (cy - 10) + "px;";
+        self = el;
+        self.appendChild(el_show);
+        setTimeout(function () {
+            for (var i in self.children) {
+                self.children[i].remove();
+            }
+        }, 600);
+    }
+</script>
+</body>
+</html>
+

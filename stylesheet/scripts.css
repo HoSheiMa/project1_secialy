@@ -1,0 +1,67 @@
+.alert {
+    background: rgba(51,51,51,0.6);
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    /* align-content: center; */
+    /* vertical-align: middle; */
+    /* text-align: center; */
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15%;
+    box-sizing: border-box;
+    z-index: 99999;
+
+} 
+.alert_Tab{
+    background: #fff;
+    height: 35%;
+    width: 25%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: .3s;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.hide {
+	margin-left: 100%;
+}
+.show {
+	margin-left: 0%;
+} 
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+
+.wrong_logen {
+	margin-top: 20px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	color :red;
+
+}
+.img_error {
+	width: 25px;
+}
+.btn_error {
+	padding: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.border {
+
+	    width: 110%;
+    height: 7px;
+    margin-left: -15px;
+    margin-top: -15px;
+    margin-bottom: 6%;
+}
+.border_error {
+	    background: red;
+
+}

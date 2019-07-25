@@ -1,0 +1,295 @@
+.class_el1 {
+    width: 70%;
+    margin-left: 25%;
+    text-align: left;
+    height: 10%;
+}
+.class_el1 img {
+	width :50px;
+	float: left;
+	border-radius: 50%;
+}
+.class_el1 span {
+	    color: #fff;
+    line-height: 2;
+    margin-left: 5px;
+    border-right: 1px solid #f6f6f6;
+    padding: 0 10px 0 10px;
+}
+
+
+.class_el1 button {
+	float: right;
+    border: none;
+    background-color: transparent;
+    color: #eee;
+    cursor: pointer;
+    line-height: 5;
+}
+.class_el1 button i {
+	font-size: 30px;
+}
+.tab_has {
+
+      height: calc(100vh - 8%);
+}
+.class_el5 {
+    width: 100%;
+    padding: 2% 0 0 0;
+    height: 45%;
+    text-align: left;
+}
+.class_el5 textarea {
+	margin-left: 25vw;
+    width: 50%;
+    border: none;
+    padding: 8px;
+    height: 250px;
+    background: #fff;
+    border-radius: 5px;
+
+    color: #c5c5c5;
+    outline: none;
+    font-size: 32px;
+    text-align: left;
+
+
+}
+.class_el5 textarea::placeholder {
+	font-size: 32px;
+	color: #c5c5c5;
+	text-align: left;
+}
+.alert_tab {
+background: #8E2DE2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    align-content: normal;
+    vertical-align: unset;
+    /* text-align: center; */
+    display: inline-block;
+    text-align: center;
+    justify-content: unset;
+    align-content: unset;
+	padding-top: .5%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.class_el5 .emojionearea .emojionearea-editor {
+	font-size: 34px;
+	max-height: 250px;
+}
+.class_el5 .emojionearea, .class_el5 .emojionearea * {
+	box-shadow: unset;
+	z-index: 9999;
+
+}
+.class_el5 .emojionearea {
+	border-radius: 5px;
+    background: #fff;
+    width: 50vw;
+    padding: 0 8px 0 8px;
+    max-width: unset;
+    box-sizing: unset;
+}
+
+.class_el6 {
+    margin-top: 0%;
+    margin-left: 25vw;
+    height: 155px;
+    background: #302b63;
+    border-radius: 5px;
+    padding: 8px;
+    max-height: 155px;
+    width: 50vw;
+    white-space: nowrap;
+    text-align: left;
+
+
+}
+.class_el7 {
+	width: 50vw;
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 2%;
+    background: #fff;
+    padding: 8px;
+    border-radius: 5px;
+}
+.class_el7 button {
+    /* border-radius: 0; */
+    padding: 8px;
+    border: none;
+    /* border-bottom: 5px solid #396AB9; */
+    border-radius: 5px;
+    color: #396AB9;
+    background-color: transparent;
+    margin: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+.class_el7 button:hover {
+	color: #079;
+	background-color: transparent;
+
+}
+.upload-btn {
+	float: left;
+    background: transparent;
+    color: #079;
+    border: none;
+    cursor: pointer;
+	font-size: 36px;
+    background: #f6f6f6;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    transition: .3s;
+}
+.upload-btn:hover {
+	background: #c5c5c5
+}
+.media_upload{ 
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+
+    border-radius: 5px;
+}
+.div_media_upload {
+		margin-left: 5px;
+		display: inline-block;
+		width: 150px;
+		height: 150px;
+		overflow: hidden;
+}
+
+
+
+/* media */
+
+@media (min-width: 768px) , (max-width : 768px){
+	.class_el1 {
+		width: 85%;
+		margin-left: 12.5%;
+
+	}
+	.class_el5 textarea ,.emojionearea, .class_el5 .emojionearea.form-control, .class_el6, .class_el7 {
+		width: 75%;
+		margin-left: 12.5%;
+	}
+	.class_el5 .emojionearea {
+		width: 75%;
+	}
+
+}
+@media (min-width: 1200px) {
+	.class_el1 {
+		width: 75%;
+		margin-left: 25%;
+
+	}
+	.class_el5 textarea, .emojionearea, .class_el5 .emojionearea.form-control, .class_el6, .class_el7 {
+		width: 50%;
+		margin-left: 25%;
+	}
+	.class_el5 .emojionearea {
+		width: 50%;
+	}
+}
+@media (max-width: 576px) {
+	.
+	.class_el1 {
+		width: 100%;
+		margin-left: 0%;
+		box-sizing: border-box;
+		border-radius: 0;
+		height: 10vh;
+		padding: 3%;
+	}
+	.class_el5 {
+		overflow: hidden;
+		height: 45vh;
+	}
+	.class_el5 textarea {
+		width: 100%;
+		margin-left: 0%;
+		box-sizing: border-box;
+		border-radius: 0;
+		height: 100%;
+		overflow: hidden;
+	}
+	.class_el5 .emojionearea .emojionearea-editor {
+		max-height: 100%;
+	}
+	.class_el6 {
+		width: 100%;
+		margin-left: 0%;
+		box-sizing: border-box;
+		border-radius: 0;
+		height: 30vh;
+	}
+	.class_el6 .div_media_upload div {
+		top: -10px;
+	}
+	.class_el6 div,.class_el6 button {
+		height: 100%	
+	} 
+	.class_el5 .emojionearea {
+		width: 100%;
+		margin-left: 0%;
+		box-sizing: border-box;
+		height: 100%;
+		overflow: hidden;
+	}
+	.class_el7 {
+		width: 100%;
+		margin-left: 0%;
+		box-sizing: border-box;
+		border-radius: 0;
+		height: 15vh;
+		padding :0px;
+	}
+	.class_el5 .emojionearea {
+		width: 100%;
+		box-sizing: border-box;
+		border-radius: 0;
+	}
+
+}
+@media (max-width: 576px ) and (max-height: 660px) {
+	.class_el7 button {
+		width: 48%;
+    	height: 6vh;
+    	box-sizing: border-box;
+		margin-left: 2px;
+		border-radius: 0;
+		height: 50%;
+
+	}
+	.class_el7 {
+		margin-top: 0;
+	}
+	.class_el7 button i {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 576px ) and (min-height: 600px) {
+	.class_el7 button {
+		width: 100%;
+		margin :0;
+		margin-top :1%;
+		border-radius: 0;
+		height: 50%;
+	}
+	.class_el7 {
+		margin:0;
+	}
+}

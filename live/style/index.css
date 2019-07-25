@@ -1,0 +1,42 @@
+body  {
+	margin: 0;
+	padding: 0;
+}
+
+#c {
+
+
+
+	    border-radius: 4%;
+    padding: 8px;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.title {
+	    border: 1px solid #eee;
+    color: red;
+    background: #eee;
+    font-style: oblique;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#live_now {
+	cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+    width: 60px;
+    height: 60px;
+    left: calc(50vw - 30px);
+    position: fixed;
+    bottom: 1vh;
+    border: none;
+    border-right: 2px solid black;
+    outline: none;
+    border-bottom: 2px solid black;
+}

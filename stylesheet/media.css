@@ -1,0 +1,48 @@
+@media (max-width: 576px) { 
+
+    .toolbar {
+        text-align: center;
+    }
+
+    .toolbar .logo {
+        float: none;
+    }
+    .main_user_set {
+        padding-top: 12%;
+    }
+    .logen_set {
+        width: 100%;
+        padding-left: 2%;
+    }
+    .logen_set input {
+        width: 90%;
+    }
+    .logen_set input[type='submit'] {
+        color: #7c5c9f;
+        background-color: white;
+        border: 1px solid #fff;
+        width: 95%;
+    }
+    .logen_set input[type='submit']:hover {
+        border-color :#7c5c9f;
+        background-color: #7c5c9f;
+        color: #fff;
+    }
+    .SingUp {
+        margin-left: 2.5%;
+        width: 90.5%;
+    }
+
+}
+@media (min-width: 1200px) {
+   .txt_main{
+
+   position: relative;
+    top: -70px;
+    }
+}
+@media (max-width: 1200px) {
+    .logen_set {
+        padding-left: 0;
+    }
+}

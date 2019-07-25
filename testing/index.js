@@ -1,0 +1,5 @@
+<#
+    el ->
+    html : 'Hello world!'
+    <-
+#>
